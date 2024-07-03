@@ -12,5 +12,3 @@ def selection_sort(lista):
             lista[index_posicao_busca], lista[index_menor_valor] = lista[index_menor_valor], lista[index_posicao_busca]
             
         
-    
-    
