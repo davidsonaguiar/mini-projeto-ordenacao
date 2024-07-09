@@ -41,38 +41,54 @@
 
 **Número de Repetições dos Testes:**
 
-- Cada teste foi realizado uma vez devido ao tempo de execução limitado.
+- Cada teste foi realizado quatro vez.
 
 #### 3. Resultados do Teste de Desempenho
 
 **Tabelas e Gráficos:**
 
-| Tamanho dos Dados | Algoritmo                | Tempo Médio (s) |
-|-------------------|--------------------------|-----------------|
-| 1000              | Quick Sort               | 0.00000         |
-| 1000              | Hybrid Sort (limite=16)  | 0.00000         |
-| 1000              | Hybrid Sort (limite=64)  | 0.00000         |
-| 1000              | Hybrid Sort (limite=256) | 0.00000         |
-| 1000              | Merge Sort               | 0.00000         |
-| 1000              | Selection Sort           | 0.02049         |
-| 10000             | Quick Sort               | 0.00000         |
-| 10000             | Hybrid Sort (limite=16)  | 0.01424         |
-| 10000             | Hybrid Sort (limite=64)  | 0.00303         |
-| 10000             | Hybrid Sort (limite=256) | 0.01021         |
-| 10000             | Merge Sort               | 0.00826         |
-| 10000             | Selection Sort           | 1.10239         |
-| 50000             | Quick Sort               | 0.03609         |
-| 50000             | Hybrid Sort (limite=16)  | 0.04247         |
-| 50000             | Hybrid Sort (limite=64)  | 0.03509         |
-| 50000             | Hybrid Sort (limite=256) | 0.05037         |
-| 50000             | Merge Sort               | 0.05037         |
-| 50000             | Selection Sort           | 27.62893        |
-| 500000            | Quick Sort               | 0.50924         |
-| 500000            | Hybrid Sort (limite=16)  | 0.53138         |
-| 500000            | Hybrid Sort (limite=64)  | 0.54567         |
-| 500000            | Hybrid Sort (limite=256) | 0.53109         |
-| 500000            | Merge Sort               | 0.67206         |
-| 500000            | Selection Sort           | >600            |
+### Tamanho dos Dados: 1000
+
+| Algoritmo                | Teste 1 (s) | Teste 2 (s) | Teste 3 (s) | Teste 4 (s) | Média (s)    |
+|--------------------------|-------------|-------------|-------------|-------------|--------------|
+| Quick Sort               | 0.00000     | 0.00000     | 0.00000     | 0.00098     | 0.00025      |
+| Hybrid Sort (limite=16)  | 0.00000     | 0.00000     | 0.00000     | 0.00100     | 0.00025      |
+| Hybrid Sort (limite=64)  | 0.00000     | 0.00000     | 0.00000     | 0.00051     | 0.00013      |
+| Hybrid Sort (limite=256) | 0.00000     | 0.00000     | 0.00000     | 0.00107     | 0.00027      |
+| Merge Sort               | 0.00000     | 0.00000     | 0.00000     | 0.00100     | 0.00025      |
+| Selection Sort           | 0.02049     | 0.01716     | 0.01653     | 0.01254     | 0.01668      |
+
+### Tamanho dos Dados: 10000
+
+| Algoritmo                | Teste 1 (s) | Teste 2 (s) | Teste 3 (s) | Teste 4 (s) | Média (s)    |
+|--------------------------|-------------|-------------|-------------|-------------|--------------|
+| Quick Sort               | 0.00000     | 0.00697     | 0.01234     | 0.00764     | 0.00674      |
+| Hybrid Sort (limite=16)  | 0.01424     | 0.00529     | 0.01153     | 0.00969     | 0.01069      |
+| Hybrid Sort (limite=64)  | 0.00303     | 0.00884     | 0.00485     | 0.00405     | 0.00519      |
+| Hybrid Sort (limite=256) | 0.01021     | 0.00772     | 0.01273     | 0.00984     | 0.01013      |
+| Merge Sort               | 0.00826     | 0.00238     | 0.01059     | 0.00198     | 0.00580      |
+| Selection Sort           | 1.10239     | 1.13255     | 1.06202     | 1.08698     | 1.09599      |
+
+### Tamanho dos Dados: 50000
+
+| Algoritmo                | Teste 1 (s) | Teste 2 (s) | Teste 3 (s) | Teste 4 (s) | Média (s)    |
+|--------------------------|-------------|-------------|-------------|-------------|--------------|
+| Quick Sort               | 0.03609     | 0.03793     | 0.04219     | 0.04693     | 0.04029      |
+| Hybrid Sort (limite=16)  | 0.04247     | 0.04288     | 0.04977     | 0.04986     | 0.04624      |
+| Hybrid Sort (limite=64)  | 0.03509     | 0.04978     | 0.04820     | 0.03284     | 0.04198      |
+| Hybrid Sort (limite=256) | 0.05037     | 0.03386     | 0.03683     | 0.05019     | 0.04281      |
+| Merge Sort               | 0.05037     | 0.06599     | 0.04735     | 0.04660     | 0.05208      |
+| Selection Sort           | 27.62893    | 28.36534    | 27.76078    | 27.76450    | 27.87989     |
+
+### Tamanho dos Dados: 500000
+
+| Algoritmo                | Teste 1 (s) | Teste 2 (s) | Teste 3 (s) | Teste 4 (s) | Média (s)    |
+|--------------------------|-------------|-------------|-------------|-------------|--------------|
+| Quick Sort               | 0.50924     | 0.56519     | 0.52792     | 0.52802     | 0.53209      |
+| Hybrid Sort (limite=16)  | 0.53138     | 0.59971     | 0.53337     | 0.52732     | 0.54795      |
+| Hybrid Sort (limite=64)  | 0.54567     | 0.53257     | 0.56339     | 0.52289     | 0.54163      |
+| Hybrid Sort (limite=256) | 0.53109     | 0.55002     | 0.53345     | 0.52789     | 0.53511      |
+| Merge Sort               | 0.67206     | 0.70021     | 0.68877     | 0.68979     | 0.68721      |
 
 #### 4. Discussão dos Resultados
 
