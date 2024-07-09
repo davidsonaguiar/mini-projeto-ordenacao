@@ -16,14 +16,6 @@
 - **Combinação das Sub-listas:** 
   Após as sub-listas serem ordenadas, elas são combinadas para formar a lista final ordenada. A função `hybrid_sort` chama recursivamente a si mesma para ordenar as sub-listas menores até que todas estejam ordenadas.
 
-**Análise de Desempenho:**
-
-- **Melhor Caso:** O pivô sempre divide a lista em duas metades iguais, resultando em uma complexidade de \(O(n \log n)\).
-
-- **Caso Médio:** O pivô divide a lista em partes aproximadamente iguais, resultando em uma complexidade de \(O(n \log n)\).
-
-- **Pior Caso:** O pivô é sempre o menor ou o maior elemento, resultando em uma complexidade de \(O(n^2)\). No entanto, a aplicação do SelectionSort para sub-listas menores ajuda a melhorar o desempenho em casos de listas pequenas.
-
 #### 2. Metodologia do Teste de Desempenho
 
 **Conjuntos de Dados Usados:**
