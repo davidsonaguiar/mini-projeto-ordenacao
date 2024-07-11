@@ -98,3 +98,7 @@
 - **Algoritmo Híbrido (limite=64):** Mostrou um desempenho melhor em conjuntos de dados pequenos e médios, mas não foi significativamente melhor que o QuickSort.
 
 - **Algoritmo Híbrido (limite=256):** Teve um desempenho similar ao limite de 64, com uma ligeira vantagem em tamanhos de dados muito grandes.
+
+#### 5. Complexidade
+
+Devido a divisão do algoritmo no quicksort sua complexidade é no melhor caso O(log n2), no pior caso, na situação em que a quantidade de itens entra no limite do quicksort, ele sera O(n2).
